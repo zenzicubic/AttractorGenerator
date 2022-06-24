@@ -20,8 +20,14 @@ namespace Renderer
         {
             // draw the attractor
             Bitmap b = new(size, size);
+            using (Graphics gfx = Graphics.FromImage(b))
+            using (SolidBrush brush = new SolidBrush(Color.FromArgb(18, 18, 18))) {
+                gfx.FillRectangle(brush, 0, 0, size, size);
+            }
+
             double x = 0, y = 0, nx, ny, tx, ty;
             int center = size / 2;
+            Color c = Color.FromArgb(255, 127, 17);
 
             for (int i = 0; i < points; i ++)
             {
@@ -34,7 +40,7 @@ namespace Renderer
                 tx = center + (scale * x);
                 ty = center + (scale * y);
 
-                b.SetPixel((int)tx, (int)ty, Color.Black);
+                b.SetPixel((int)tx, (int)ty, c);
             }
 
             return b;

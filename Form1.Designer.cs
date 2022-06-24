@@ -256,7 +256,7 @@
             // 
             this.previewBox.Location = new System.Drawing.Point(99, 0);
             this.previewBox.Name = "previewBox";
-            this.previewBox.Size = new System.Drawing.Size(1232, 924);
+            this.previewBox.Size = new System.Drawing.Size(950, 924);
             this.previewBox.TabIndex = 14;
             this.previewBox.TabStop = false;
             // 
@@ -272,7 +272,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1728, 947);
+            this.ClientSize = new System.Drawing.Size(1441, 947);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.randomizeBtn);
             this.Name = "Form1";
